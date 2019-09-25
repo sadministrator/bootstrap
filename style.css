@@ -1,0 +1,38 @@
+.navbar
+{
+    background:#31CDFD;
+}
+
+.nav-link , .navbar-brand
+{
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+.nav-link
+{
+    margin-right: 1em !important;
+}
+
+.nav-link:hover
+{
+    background: #f4f4f4;
+    color: #31CDFD;
+}
+
+.navbar-collapse
+{
+    justify-content: flex-end;
+}
+
+.navbar-toggler
+{
+    background:#fff !important;
+}
+
+.header {
+    background-image: url('./images/gzilla.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
