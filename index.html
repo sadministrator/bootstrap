@@ -6,7 +6,15 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -43,11 +51,178 @@
             <div class="description text-center">
                 <h1>Hello, welcome to Godzilla movies!
                     <p>You'll be able to find lots of Godzilla movies here.</p>
-                    <button class="btn btn-outline-secondary btn-lg">Learn More</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg" data-toggle="modal"
+                        data-target="#infoModal">Learn More</button>
                 </h1>
             </div>
         </div>
     </header>
+
+    <!-- Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Godzilla Information</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p><b>Godzilla</b><span style="font-weight: normal"> (<a href="/wiki/Japanese_language"
+                                title="Japanese language">Japanese</a>: <span lang="ja">ゴジラ</span><span
+                                style="display:none">,</span> <a href="/wiki/Hepburn_romanization"
+                                title="Hepburn romanization">Hepburn</a>: <i>Gojira</i>)</span> (<span
+                            class="nowrap"><span class="IPA nopopups noexcerpt"><a href="/wiki/Help:IPA/English"
+                                    title="Help:IPA/English">/<span style="border-bottom:1px dotted"><span
+                                            title="/ɡ/: 'g' in 'guy'">ɡ</span><span
+                                            title="/ɒ/: 'o' in 'body'">ɒ</span><span title="'d' in 'dye'">d</span><span
+                                            title="/ˈ/: primary stress follows">ˈ</span><span
+                                            title="'z' in 'zoom'">z</span><span title="/ɪ/: 'i' in 'kit'">ɪ</span><span
+                                            title="'l' in 'lie'">l</span><span
+                                            title="/ə/: 'a' in 'about'">ə</span></span>/</a></span></span>;
+                        <small></small><span title="Representation in the International Phonetic Alphabet (IPA)"
+                            class="IPA"><a href="/wiki/Help:IPA/Japanese"
+                                title="Help:IPA/Japanese">[ɡoꜜdʑiɾa]</a></span> <span class="nowrap"
+                            style="font-size:85%">(<span class="unicode haudio"><span class="fn"><span
+                                        style="white-space:nowrap;margin-right:.25em;"><a
+                                            href="/wiki/File:Ja-Godzilla.oga" title="About this sound"><img
+                                                alt="About this sound"
+                                                src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/11px-Loudspeaker.svg.png"
+                                                decoding="async"
+                                                srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/17px-Loudspeaker.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/22px-Loudspeaker.svg.png 2x"
+                                                data-file-width="20" data-file-height="20" width="11"
+                                                height="11"></a></span><a
+                                        href="//upload.wikimedia.org/wikipedia/commons/d/d0/Ja-Godzilla.oga"
+                                        class="internal" title="Ja-Godzilla.oga">listen</a></span></span>)</span>) is a
+                        fictional monster, or <i><a href="/wiki/Kaiju" title="Kaiju">kaiju</a></i>, originating from a
+                        series of <a href="/wiki/Godzilla_(franchise)" title="Godzilla (franchise)">Japanese films of
+                            the same name</a>. The character first appeared in <a href="/wiki/Ishir%C5%8D_Honda"
+                            title="Ishirō Honda">Ishirō Honda</a>'s 1954 film <i><a href="/wiki/Godzilla_(1954_film)"
+                                title="Godzilla (1954 film)">Godzilla</a></i> and became a worldwide <a
+                            href="/wiki/Godzilla_in_popular_culture" title="Godzilla in popular culture">pop culture
+                            icon</a>, appearing in various media, including 32 films produced by <a href="/wiki/Toho"
+                            title="Toho">Toho</a>, <a href="/wiki/Godzilla_(franchise)#American_productions"
+                            title="Godzilla (franchise)">three Hollywood films</a> and numerous <a
+                            href="/wiki/List_of_Godzilla_games" title="List of Godzilla games">video games</a>, novels,
+                        <a href="/wiki/Godzilla_(comics)" title="Godzilla (comics)">comic books</a> and <a
+                            href="/wiki/Godzilla_(franchise)#Television" title="Godzilla (franchise)">television
+                            shows</a>. Godzilla has been dubbed <b>the King of the Monsters</b>, a phrase first used in
+                        <i><a href="/wiki/Godzilla,_King_of_the_Monsters!"
+                                title="Godzilla, King of the Monsters!">Godzilla, King of the Monsters!</a></i>, the
+                        Americanized version of the original film.
+
+                    </p>
+                    <p>Godzilla is depicted as an enormous, destructive, prehistoric sea monster awakened and empowered
+                        by <a href="/wiki/Radioactive_decay" title="Radioactive decay">nuclear radiation</a>. With the
+                        <a href="/wiki/Nuclear_bombings_of_Hiroshima_and_Nagasaki" class="mw-redirect"
+                            title="Nuclear bombings of Hiroshima and Nagasaki">nuclear bombings of Hiroshima and
+                            Nagasaki</a> and the <i><a href="/wiki/Daigo_Fukury%C5%AB_Maru"
+                                title="Daigo Fukuryū Maru">Lucky Dragon 5</a></i> incident still fresh in the Japanese
+                        consciousness, Godzilla was conceived as a metaphor for <a href="/wiki/Nuclear_weapon"
+                            title="Nuclear weapon">nuclear weapons</a>.<sup id="cite_ref-FOOTNOTEBrothers2009_22-0"
+                            class="reference"><a href="#cite_note-FOOTNOTEBrothers2009-22">[22]</a></sup> As the film
+                        series expanded, some stories took on less serious undertones, portraying Godzilla as an <a
+                            href="/wiki/Antihero" title="Antihero">antihero</a>, or a lesser threat who defends
+                        humanity. With the end of the <a href="/wiki/Cold_War" title="Cold War">Cold War</a>, several
+                        post-1984 <i>Godzilla</i> films shifted the character's portrayal to themes including Japan's
+                        forgetfulness over its imperial past,<sup id="cite_ref-FOOTNOTEBarr201683_23-0"
+                            class="reference"><a href="#cite_note-FOOTNOTEBarr201683-23">[23]</a></sup> <a
+                            href="/wiki/Natural_disaster" title="Natural disaster">natural disasters</a> and the <a
+                            href="/wiki/Human_condition" title="Human condition">human condition</a>.<sup
+                            id="cite_ref-24" class="reference"><a href="#cite_note-24">[24]</a></sup>
+                    </p>
+                    <p>Godzilla has been featured alongside many supporting characters. It has faced human opponents
+                        such as the <a href="/wiki/Japan_Self-Defense_Forces"
+                            title="Japan Self-Defense Forces">JSDF</a>, or other monsters, including <a
+                            href="/wiki/King_Ghidorah" title="King Ghidorah">King Ghidorah</a>, <a
+                            href="/wiki/Mechagodzilla" title="Mechagodzilla">Mechagodzilla</a> and <a href="/wiki/Gigan"
+                            title="Gigan">Gigan</a>. Godzilla sometimes has allies, such as <a href="/wiki/Rodan"
+                            title="Rodan">Rodan</a>, <a href="/wiki/Mothra" title="Mothra">Mothra</a> and <a
+                            href="/wiki/Anguirus" title="Anguirus">Anguirus</a>, and offspring, such as <a
+                            href="/wiki/Minilla" title="Minilla">Minilla</a> and <a href="/wiki/Godzilla_Junior"
+                            title="Godzilla Junior">Godzilla Junior</a>. Godzilla has also fought characters from other
+                        franchises in <a href="/wiki/Crossover_(fiction)" title="Crossover (fiction)">crossover</a>
+                        media, such as the <a href="/wiki/RKO_Pictures" title="RKO Pictures">RKO Pictures</a>/<a
+                            href="/wiki/Universal_Studios" class="mw-redirect" title="Universal Studios">Universal
+                            Studios</a> movie monster <a href="/wiki/King_Kong" title="King Kong">King Kong</a>, as well
+                        as various <a href="/wiki/Marvel_Comics" title="Marvel Comics">Marvel Comics</a> characters,
+                        including <a href="/wiki/S.H.I.E.L.D." title="S.H.I.E.L.D.">S.H.I.E.L.D.</a>,<sup
+                            id="cite_ref-25" class="reference"><a href="#cite_note-25">[25]</a></sup> the <a
+                            href="/wiki/Fantastic_Four" title="Fantastic Four">Fantastic Four</a><sup id="cite_ref-26"
+                            class="reference"><a href="#cite_note-26">[26]</a></sup> and the <a
+                            href="/wiki/Avengers_(comics)" title="Avengers (comics)">Avengers</a>.<sup id="cite_ref-27"
+                            class="reference"><a href="#cite_note-27">[27]</a></sup>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards section -->
+    <div class="cards">
+        <div class="container">
+            <h1 class="text-center">Movies</h1>
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/resurgence.jpg" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Godzilla Resurgence (2016)</h4>
+                            <p class="card-text">
+                                Japan is plunged into chaos when a skyscraper-sized lizard monster rises from the deep
+                                of Tokyo Bay and lays waste to Tokyo.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="card-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/1998.jpg" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Godzilla (1998)</h4>
+                            <p class="card-text">
+                                During a nuclear test, the French government inadvertently mutates a lizard nest; years
+                                later, a giant lizard makes its way to New York City. When the creature, emerges, a
+                                massive battle with the military begins.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="card-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/kingKong.jpg" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">King Kong vs. Godzilla (1962)</h4>
+                            <p class="card-text">
+                                King Kong and Godzilla go head-to-head in an epic battle of the beast when the giant
+                                gorilla escapes from captivity in Japan and squares up to the recently thawed lizard.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="card-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="main.js"></script>
 </body>

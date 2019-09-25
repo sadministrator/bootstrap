@@ -63,3 +63,29 @@
     background: #31CDFD;
     color: #fff;
 }
+
+.cards {
+    margin: 4em 0;
+    position: relative;
+}
+
+.cards h1 {
+    color: #31CDFD;
+    margin: 2em;
+}
+
+.cards .card {
+    box-shadow: 0 0 20px #ccc;
+}
+
+.cards .card img {
+    height: 12em;
+}
+
+.cards .card-title {
+    color: #31CDFD;
+}
+
+.cards .card-body {
+    padding: 1em;
+}
