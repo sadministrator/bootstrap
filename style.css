@@ -1,33 +1,27 @@
-.navbar
-{
-    background:#31CDFD;
+.navbar {
+    background: #31CDFD;
 }
 
-.nav-link , .navbar-brand
-{
+.nav-link, .navbar-brand {
     color: #f4f4f4;
     cursor: pointer;
 }
 
-.nav-link
-{
+.nav-link {
     margin-right: 1em !important;
 }
 
-.nav-link:hover
-{
+.nav-link:hover {
     background: #f4f4f4;
     color: #31CDFD;
 }
 
-.navbar-collapse
-{
+.navbar-collapse {
     justify-content: flex-end;
 }
 
-.navbar-toggler
-{
-    background:#fff !important;
+.navbar-toggler {
+    background: #fff !important;
 }
 
 .header {
@@ -35,4 +29,37 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(244, 244, 244, 0.59);
+}
+
+.description {
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+}
+
+.description h1 {
+    color: #31CDFD;
+}
+
+.description p {
+    color: #666;
+    font-size: 20px;
+    width: 100%;
+    line-height: 1.5;
+}
+
+.description button {
+    border: 1px solid #31CDFD;
+    background: #31CDFD;
+    color: #fff;
 }
