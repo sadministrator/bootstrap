@@ -12,3 +12,7 @@ function hideAlert(){
     
     $(".alert").addClass("hidden");
 }
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
