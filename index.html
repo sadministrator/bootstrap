@@ -20,8 +20,15 @@
 
 <body>
     <!-- navbar -->
+    <!-- Home tab is a dropdown menu -->
     <nav class="navbar navbar-expand-lg fixed-top ">
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand dropdown-toggle" id="dropdownButton" data-toggle="dropdown" href="#">Home</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownButton">
+            <a class="dropdown-item" href="#">Lizards</a>
+            <a class="dropdown-item" href="#">Radioactivity</a>
+            <a class="dropdown-item" href="#">Monsters</a>
+            <a class="dropdown-item" href="#">Japan</a>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,14 +38,14 @@
                 <li class="nav-item">
                     <a class="nav-link" data-value="about" href="#">About</a> </li>
                 <li class="nav-item">
-                    <a class="nav-link " data-value="portfolio" href="#">Portfolio</a>
+                    <a class="nav-link " data-value="portfolio" href="#">Lizards</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " data-value="blog" href="#">Blog</a> </li>
+                    <a class="nav-link " data-value="blog" href="#">Radioactivity</a> </li>
                 <li class="nav-item">
-                    <a class="nav-link " data-value="team" href="#"> Team</a> </li>
+                    <a class="nav-link " data-value="team" href="#">Monsters</a> </li>
                 <li class="nav-item">
-                    <a class="nav-link " data-value="contact" href="#">Contact</a> </li>
+                    <a class="nav-link " data-value="contact" href="#">Japan</a> </li>
             </ul>
         </div>
     </nav>
@@ -162,15 +169,18 @@
     </div>
 
     <!-- Cards section -->
-    <!-- Card images have tooltips and fav buttons activate an alert -->
-    <div class="cards">
+    <!-- Images have tooltips -->
+    <!-- Fav buttons activate an alert -->
+    <!-- "Read More" links activate popovers -->
+    <div class="cards" id="cards">
         <div class="container">
             <h1 class="text-center">Movies</h1>
             <div class="row">
                 <div class="col-md-4 col-lg-4 col-sm-12">
                     <div class="card text-center">
                         <div class="card-img">
-                            <img src="images/resurgence.jpg" class="img-fluid" data-toggle="tooltip" data-placement="top" title="Godzilla Resurgence (2016)">
+                            <img src="images/resurgence.jpg" class="img-fluid" data-toggle="tooltip"
+                                data-placement="top" title="Godzilla Resurgence (2016)">
                         </div>
 
                         <div class="card-body">
@@ -181,7 +191,8 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                            <a href="" class="card-link">Read more</a>
+                            <a href="#cards" class="card-link" data-toggle="popover" data-placement="bottom" title="Godzilla"
+                                data-content="Godzilla is the name of the lizard.">Read more</a>
                             <button type="button" class="btn btn-default btn-lg btn-fav">
                                 <span class="glyphicon glyphicon-star"></span> Fav
                             </button>
@@ -191,7 +202,8 @@
                 <div class="col-md-4 col-lg-4 col-sm-12">
                     <div class="card text-center">
                         <div class="card-img">
-                            <img src="images/1998.jpg" class="img-fluid" data-toggle="tooltip" data-placement="top" title="Godzilla (1998)">
+                            <img src="images/1998.jpg" class="img-fluid" data-toggle="tooltip" data-placement="top"
+                                title="Godzilla (1998)">
                         </div>
 
                         <div class="card-body">
@@ -203,7 +215,8 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                            <a href="" class="card-link">Read more</a>
+                            <a href="#cards" class="card-link" data-toggle="popover" data-placement="bottom" title="Godzilla"
+                                data-content="Godzilla is the name of the lizard.">Read more</a>
                             <button type="button" class="btn btn-default btn-lg btn-fav">
                                 <span class="glyphicon glyphicon-star "></span> Fav
                             </button>
@@ -213,7 +226,8 @@
                 <div class="col-md-4 col-lg-4 col-sm-12">
                     <div class="card text-center">
                         <div class="card-img">
-                            <img src="images/kingKong.jpg" class="img-fluid" data-toggle="tooltip" data-placement="top" title="King Kong vs. Godzilla">
+                            <img src="images/kingKong.jpg" class="img-fluid" data-toggle="tooltip" data-placement="top"
+                                title="King Kong vs. Godzilla">
                         </div>
 
                         <div class="card-body">
@@ -224,7 +238,8 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                            <a href="" class="card-link">Read more</a>
+                            <a href="#cards" class="card-link" data-toggle="popover" data-placement="bottom" title="Godzilla"
+                                data-content="Godzilla is the name of the lizard.">Read more</a>
                             <button type="button" class="btn btn-default btn-lg btn-fav">
                                 <span class="glyphicon glyphicon-star"></span> Fav
                             </button>
